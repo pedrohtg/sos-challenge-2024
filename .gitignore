@@ -1,0 +1,16 @@
+# weight files
+weights/**
+
+**.pth
+**/.pth
+
+**.*pth
+**/*.pth
+
+**.**pth
+**/**.pth
+
+**pth
+**/*pth
+
+**/**pth
