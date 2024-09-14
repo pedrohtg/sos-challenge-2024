@@ -15,3 +15,21 @@ For all test images:
 - For each object segmentation, its convex hull is computed and only objects with some intersection with the road mask are mantained.
 - The remainder objects are then allotted a track id. Tracking through frames is done using a greedy algorithm that matches boxes from one frame with boxes with the highest intersection in the next frame.
 - Then both the track_id and ood_score maps are saved
+
+
+Current metrics for the SOS dataset:
+
+| **Metrics**      	|              	|
+|------------------	|--------------	|
+| **Pixel-wise**   	|              	|
+| AUROC            	|        98.02 	|
+| FPR95            	|         0.08 	|
+| AUPRC            	|        93.10 	|
+| **Segment-wise** 	|              	|
+| # TPs            	|      1219.64 	|
+| # FNs            	|       372.36 	|
+| # FPs            	|      1344.73 	|
+| Mean F1          	|        58.64 	|
+| **Tracking**     	|              	|
+| MOTA             	|    0.1677763 	|
+| MOTP             	| 141.96071356 	|
